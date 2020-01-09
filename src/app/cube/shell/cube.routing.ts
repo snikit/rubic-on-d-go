@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { extract } from '@app/core';
 import { Shell } from '@app/shell/shell.service';
-import { RubicsCubeComponent } from './rubics_cube.component';
+import { RubicsCubeComponent } from '../rubics_cube/rubics_cube.component';
 
 const routes: Routes = [
   Shell.childRoutes([
