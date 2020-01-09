@@ -1,0 +1,28 @@
+{
+  "generator-ngx-rocket": {
+    "version": "7.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "target": ["web"],
+      "pwa": false,
+      "ui": "ionic",
+      "layout": "side-menu",
+      "auth": true,
+      "lazy": true,
+      "angulartics": true,
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "",
+      "tools": ["prettier", "hads", "compodoc"],
+      "utility": ["lodash", "moment"],
+      "appName": "cube-on-d-go",
+      "projectName": "cube-on-d-go",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}
