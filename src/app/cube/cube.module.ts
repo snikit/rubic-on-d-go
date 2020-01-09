@@ -7,6 +7,13 @@ import { CubeComponent } from './cube/cube.component';
 import { CubieComponent } from './cubie/cubie.component';
 import { FaceComponent } from './face/face.component';
 import { CubeRoutingModule } from './shell/cube.routing';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = {
+    swipe: { direction: Hammer.DIRECTION_ALL }
+  } as any;
+}
 
 @NgModule({
   declarations: [
@@ -18,6 +25,12 @@ import { CubeRoutingModule } from './shell/cube.routing';
     FaceComponent
   ],
   imports: [CommonModule, CubeRoutingModule],
-  exports: [RubicsCubeComponent]
+  exports: [RubicsCubeComponent],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
+  ]
 })
 export class CubeModule {}

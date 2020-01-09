@@ -11,6 +11,11 @@ import { AppModule } from '@app/app.module';
 import { environment } from '@env/environment';
 import { hmrBootstrap } from './hmr';
 
+/**
+ * Hammerjs must be imported for gestures
+ */
+import 'hammerjs';
+
 if (environment.production) {
   enableProdMode();
 }
