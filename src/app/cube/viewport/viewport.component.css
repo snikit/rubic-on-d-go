@@ -1,2 +1,7 @@
 .viewport {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+
+  -webkit-perspective-origin: 50% 200px;
+  -moz-perspective-origin: 50% 200px;
 }
