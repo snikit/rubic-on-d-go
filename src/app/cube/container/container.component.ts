@@ -7,7 +7,7 @@ import { Output, Component, OnInit, HostListener, EventEmitter } from '@angular/
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent implements OnInit {
-  @Output() swipeUp = new EventEmitter();
+  @Output() onSwipe$ = new EventEmitter();
 
   constructor() {}
 
@@ -18,5 +18,7 @@ export class ContainerComponent implements OnInit {
     console.log(event);
 
     //! we need to map directions her
+
+    this.onSwipe$.emit(event);
   }
 }
