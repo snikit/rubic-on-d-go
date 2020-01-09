@@ -6,9 +6,17 @@ import { ContainerComponent } from './container/container.component';
 import { ViewportComponent } from './viewport/viewport.component';
 import { CubeComponent } from './cube/cube.component';
 import { CubieComponent } from './cubie/cubie.component';
+import { FaceComponent } from './face/face.component';
 
 @NgModule({
-  declarations: [RubicsCubeComponent, ContainerComponent, ViewportComponent, CubeComponent, CubieComponent],
+  declarations: [
+    RubicsCubeComponent,
+    ContainerComponent,
+    ViewportComponent,
+    CubeComponent,
+    CubieComponent,
+    FaceComponent
+  ],
   imports: [CommonModule, CubeRoutingModule],
   exports: [RubicsCubeComponent]
 })
